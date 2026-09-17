@@ -1,0 +1,26 @@
+dataset,check_type,check_name,issue_count,status
+Customers,Basic Quality,Missing & Duplicate Rows,0,GOOD
+Orders,Basic Quality,Missing & Duplicate Rows,4908,WARNING
+Order Items,Basic Quality,Missing & Duplicate Rows,0,GOOD
+Order Payments,Basic Quality,Missing & Duplicate Rows,0,GOOD
+Order Reviews,Basic Quality,Missing & Duplicate Rows,145903,CRITICAL
+Products,Basic Quality,Missing & Duplicate Rows,2448,WARNING
+Sellers,Basic Quality,Missing & Duplicate Rows,0,GOOD
+Orders,Datatype,order_id,0,GOOD
+Orders,Datatype,customer_id,0,GOOD
+Orders,Datatype,order_purchase_timestamp,0,GOOD
+Orders,Datatype,order_approved_at,0,GOOD
+Orders,Datatype,order_delivered_carrier_date,0,GOOD
+Orders,Datatype,order_delivered_customer_date,0,GOOD
+Orders,Datatype,order_estimated_delivery_date,0,GOOD
+Customers,Business Key,customer_id,0,GOOD
+Customers,Business Key,customer_unique_id,6342,CRITICAL
+Orders,Business Key,order_id,0,GOOD
+Orders,Business Key,customer_id,0,GOOD
+Order Items,Business Key,order_id,23787,CRITICAL
+Order Items,Business Key,order_item_id,112649,CRITICAL
+Products,Business Key,product_id,0,GOOD
+Sellers,Business Key,seller_id,0,GOOD
+Order Items,Outlier,price,8427,CRITICAL
+Order Items,Outlier,freight_value,12134,CRITICAL
+Orders,Date Logic,order_purchase_timestamp → order_delivered_customer_date,0,GOOD

@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+
+# Raw Olist datasets
+data/*.csv
+
+# Keep generated data-quality reports
+!data/master_quality_report.csv
+!data/master_quality_report_final.csv
