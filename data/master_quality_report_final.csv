@@ -1,10 +1,10 @@
 dataset,check_type,check_name,issue_count,status,business_interpretation
 Customers,Basic Quality,Missing & Duplicate Rows,0,GOOD,VALID
-Orders,Basic Quality,Missing & Duplicate Rows,4908,WARNING,VALID
+Orders,Basic Quality,Missing & Duplicate Rows,4908,WARNING,POTENTIAL
 Order Items,Basic Quality,Missing & Duplicate Rows,0,GOOD,VALID
 Order Payments,Basic Quality,Missing & Duplicate Rows,0,GOOD,VALID
-Order Reviews,Basic Quality,Missing & Duplicate Rows,145903,CRITICAL,VALID
-Products,Basic Quality,Missing & Duplicate Rows,2448,WARNING,VALID
+Order Reviews,Basic Quality,Missing & Duplicate Rows,145903,CRITICAL,INVALID
+Products,Basic Quality,Missing & Duplicate Rows,2448,WARNING,POTENTIAL
 Sellers,Basic Quality,Missing & Duplicate Rows,0,GOOD,VALID
 Orders,Datatype,order_id,0,GOOD,VALID
 Orders,Datatype,customer_id,0,GOOD,VALID
@@ -21,6 +21,6 @@ Order Items,Business Key,order_id,23787,CRITICAL,EXPECTED
 Order Items,Business Key,order_item_id,112649,CRITICAL,EXPECTED
 Products,Business Key,product_id,0,GOOD,VALID
 Sellers,Business Key,seller_id,0,GOOD,VALID
-Order Items,Outlier,price,8427,CRITICAL,VALID
-Order Items,Outlier,freight_value,12134,CRITICAL,VALID
+Order Items,Outlier,price,8427,CRITICAL,INVALID
+Order Items,Outlier,freight_value,12134,CRITICAL,INVALID
 Orders,Date Logic,order_purchase_timestamp → order_delivered_customer_date,0,GOOD,VALID

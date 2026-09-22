@@ -1,266 +1,309 @@
-# 🤖 AI Business Intelligence Copilot
+﻿ðŸ¤– AI Business Intelligence Copilot
 
-An AI-powered Business Intelligence application built on the **Olist Brazilian E-Commerce dataset** to transform raw e-commerce data into actionable business insights.
+An AI-powered Business Intelligence application built on the Olist
+Brazilian E-Commerce dataset to transform raw e-commerce data into
+actionable business insights.
 
-The project combines **Python, SQL, Power BI, Machine Learning, Data Quality Monitoring, and LLM-based business analysis** in a single analytics workflow.
+The project combines Python, SQL, Power BI, Machine Learning, Data
+Quality Monitoring, Streamlit, and LLM-based business analysis into an
+end-to-end analytics workflow.
 
----
+ðŸŽ¯ Project Overview
 
-## 🎯 Project Overview
+The AI Business Intelligence Copilot allows business users to ask
+questions in natural language and receive data-driven insights about:
 
-The **AI Business Intelligence Copilot** allows business users to ask questions in natural language and receive data-driven insights about:
+Revenue performance
 
-* Revenue performance
-* Customer behavior
-* Customer retention risk
-* Product performance
-* Seller performance
-* Delivery performance
-* Data quality
-* Revenue forecasting
+Customer behavior and retention risk
 
-Instead of manually exploring multiple datasets, users can ask business questions directly through the Copilot interface.
+Product performance
 
----
+Seller performance
 
-## 💼 Business Problem
+Delivery performance
 
-E-commerce businesses generate large amounts of data across customers, orders, products, sellers, payments, and deliveries.
+Data quality
 
-The challenge is to convert this raw data into useful business information such as:
+Revenue forecasting
 
-* Which products generate the most revenue?
-* Which customers are at risk?
-* Which sellers have delivery problems?
-* Which products have high demand but low value?
-* What is the expected revenue for the next day?
-* Are there data-quality problems affecting analysis?
+Instead of manually exploring multiple datasets, users can ask business
+questions directly through the Copilot interface.
 
-This project addresses these questions through an integrated BI and AI solution.
+ðŸ’¼ Business Problem
 
----
+E-commerce businesses generate large amounts of data across customers,
+orders, products, sellers, payments, reviews, and deliveries.
 
-## 💡 Solution
+The challenge is to convert this raw data into useful business
+information such as:
 
-The project follows this workflow:
+Which products generate the most revenue?
 
-```text
+Which customers are at risk?
+
+Which sellers have delivery problems?
+
+Which products have high demand but low value?
+
+What is the expected revenue for the next day?
+
+Are data-quality problems affecting analysis?
+
+This project addresses these questions through an integrated BI and AI
+solution.
+
+ðŸ’¡ Solution Architecture
+
 Olist E-Commerce Data
-        ↓
+        â†“
 Data Cleaning & Validation
-        ↓
-SQL / Python Analytics
-        ↓
-Business Metrics
-        ↓
+        â†“
+Python / SQL Analytics
+        â†“
+Business Metrics & Intelligence
+        â†“
 Machine Learning
-        ↓
-Power BI Dashboards
-        ↓
+        â†“
+Power BI Data Quality Dashboard
+        â†“
 AI Business Copilot
-        ↓
-Business Insights & Actions
-```
+        â†“
+Business Insights & Recommended Actions
 
----
+ðŸ› ï¸ Tech Stack
 
-## 🛠️ Tech Stack
+Technology         Purpose
 
-| Technology       | Purpose                                |
-| ---------------- | -------------------------------------- |
-| Python           | Data analysis and business logic       |
-| Pandas           | Data cleaning and transformation       |
-| NumPy            | Numerical analysis                     |
-| MySQL / SQL      | Data querying and analysis             |
-| Power BI         | Interactive dashboards                 |
-| Scikit-learn     | Machine learning                       |
-| Random Forest    | Revenue forecasting                    |
-| Streamlit        | Copilot web interface                  |
-| OpenAI API       | Natural-language business explanations |
-| Jupyter Notebook | Data exploration                       |
-| Git / GitHub     | Version control and portfolio          |
+Python             Data analysis and business logic
+Pandas             Data cleaning and transformation
+NumPy              Numerical analysis
+MySQL / SQL        Data querying and analysis
+Power BI           Data-quality and business visualization
+Scikit-learn       Machine learning
+Random Forest      Daily revenue forecasting
+Streamlit          AI Copilot web interface
+OpenAI API         Natural-language business explanations
+Jupyter Notebook   Data exploration
+Git / GitHub       Version control and portfolio
 
----
+ðŸ“Š Business Intelligence Features
 
-# 📊 Business Intelligence Features
-
-## 💰 Revenue Intelligence
+ðŸ’° 1. Revenue Intelligence
 
 The project analyzes:
 
-* Total revenue
-* Monthly revenue
-* Revenue trends
-* Revenue changes
-* Business performance
-* Revenue decline explanations
+Total revenue
 
-Example questions:
+Monthly revenue
 
-```text
+Revenue trends
+
+Revenue changes
+
+Business performance
+
+Revenue decline explanations
+
+Example questions
+
 Why did revenue decline in June 2018?
+
 What happened to revenue in May 2018?
-```
 
----
+The Copilot retrieves the relevant analytics result and converts it into
+a concise business explanation.
 
-# 👥 Customer Intelligence
+ðŸ‘¥ 2. Customer Intelligence
 
-Customer analysis uses customer-level purchase behavior and RFM-based segmentation.
+Customer analysis uses purchase behavior and RFM-based segmentation.
 
-### Customer Segments
+Customer Segments
 
-* VIP
-* Loyal
-* Potential Loyal
-* At Risk
-* Lost
+VIP
 
-### Supported Questions
+Loyal
 
-```text
+Potential Loyal
+
+At Risk
+
+Lost
+
+Supported Questions
+
 How many VIP customers do we have?
+
 Which customers are at risk?
+
 What is our customer retention risk?
+
 Which customers should we prioritize for retention?
-```
 
-The system can identify customers based on:
+The analysis considers:
 
-* Recency
-* Frequency
-* Monetary value
-* Retention risk
-* Priority score
+Recency
 
----
+Frequency
 
-# 📦 Product Intelligence
+Monetary value
+
+Retention risk
+
+Priority score
+
+ðŸ“¦ 3. Product Intelligence
 
 Product performance is analyzed using:
 
-* Revenue
-* Units sold
-* Average price
-* Product classification
+Revenue
 
-### Product Categories
+Units sold
+
+Average price
+
+Product classification
+
+Product Classification
 
 Products can be classified as:
 
-* Business Winner
-* Premium Product
-* High Demand - Low Value
-* Low Performer
+Business Winner
 
-### Supported Questions
+Premium Product
 
-```text
+High Demand - Low Value
+
+Low Performer
+
+Supported Questions
+
 What are the top 10 products by revenue?
+
 Which products are business winners?
+
 Which products have high demand but low value?
-```
 
----
+This helps separate products that generate both strong revenue and
+volume from products that sell frequently but generate comparatively
+lower value.
 
-# 🏆 Seller Intelligence
+ðŸ† 4. Seller Intelligence
 
 Seller performance is evaluated using:
 
-* Revenue
-* Order volume
-* Average order value
-* Delivery performance
-* Late delivery rate
-* Performance score
+Revenue
 
-### Seller Analysis
+Order volume
+
+Average order value
+
+Delivery performance
+
+Late delivery rate
+
+Performance score
+
+Seller Analysis
 
 The Copilot can identify:
 
-* Top-performing sellers
-* Risky sellers
-* Sellers with high late-delivery rates
+Top-performing sellers
 
-Example questions:
+Risky sellers
 
-```text
+Sellers with high late-delivery rates
+
+Example Questions
+
 Which sellers are top performers?
+
 Show me the top 10 risky sellers.
+
 Which sellers have the highest late delivery rate?
-```
 
----
+ðŸ”Ž 5. Data Quality Monitor
 
-# 🔎 Data Quality Monitor
-
-A dedicated data-quality engine checks multiple datasets for potential issues.
+A dedicated data-quality engine checks multiple datasets for potential
+issues.
 
 The system evaluates:
 
-* Missing values
-* Duplicate keys
-* Data types
-* Date logic
-* Outliers
-* Business-key behavior
-* Dataset-level quality status
+Missing values
 
-The project also generates a consolidated:
+Duplicate keys
 
-```text
+Data types
+
+Date logic
+
+Statistical outliers
+
+Business-key behavior
+
+Dataset-level quality status
+
+The project also generates a consolidated report:
+
 master_quality_report_final.csv
-```
 
-This report is visualized through Power BI.
+This report is visualized through the Power BI Data Quality Monitoring
+& Business Validation dashboard.
 
----
+Dashboard Screenshot
 
-# 📈 Revenue Forecasting
 
-The project includes a machine-learning based **next-day revenue forecasting system**.
 
-### Approach
+ðŸ“ˆ 6. Revenue Forecasting
 
-Historical daily revenue is transformed into time-series features such as:
+The project includes a machine-learning based next-day revenue
+forecasting system.
 
-* Previous-day revenue
-* Previous-week revenue
-* Rolling 7-day revenue
-* Rolling 7-day orders
-* Rolling 7-day units
-* Calendar features
+Approach
 
-A chronological train/test split is used to avoid future-data leakage.
+Historical daily revenue is transformed into time-series features such
+as:
 
-### Model
+Previous-day revenue
 
-A Random Forest regression model is used for daily revenue forecasting.
+Previous-week revenue
 
-The saved model is:
+Rolling 7-day revenue
 
-```text
+Rolling 7-day orders
+
+Rolling 7-day units
+
+Calendar features
+
+A chronological train/test split is used to reduce the risk of
+future-data leakage.
+
+Model
+
+A Random Forest regression model is used for daily revenue
+forecasting.
+
+Saved model:
+
 models/daily_revenue_forecast_model.pkl
-```
 
-The Copilot can answer:
+Supported Questions
 
-```text
 What will tomorrow's revenue be?
+
 Can you predict the next day's revenue?
+
 What is the revenue forecast?
+
 How accurate is the revenue forecast model?
-```
 
----
-
-# 🤖 AI Business Copilot
+ðŸ¤– AI Business Copilot
 
 The Copilot provides a natural-language interface for business analysis.
 
 Users can ask questions such as:
 
-```text
 Which products are business winners?
 
 Which customers are at risk?
@@ -270,222 +313,266 @@ Which sellers have the highest late delivery rate?
 What is our customer retention risk?
 
 What will tomorrow's revenue be?
-```
 
-The system first retrieves the appropriate analytics result and then uses an LLM to convert that result into a concise business explanation.
+How It Works
 
-### AI Response Structure
+User Question
+      â†“
+Intent Detection
+      â†“
+Relevant Analytics Engine
+      â†“
+Business Result
+      â†“
+LLM Explanation
+      â†“
+Business Insight
 
-```text
-📊 Business Insight
+The system first retrieves the appropriate analytics result and then
+uses an LLM to convert that result into a concise business explanation.
 
-💡 Why It Matters
+AI Response Structure
 
-🎯 Recommended Action
-```
+ðŸ“Š Business Insight
 
-The LLM is instructed to use the analytics result as its source and avoid inventing business metrics.
+ðŸ’¡ Why It Matters
 
----
+ðŸŽ¯ Recommended Action
 
-# 📊 Power BI
+The LLM is instructed to use the analytics result as its source and
+avoid inventing business metrics or unsupported facts.
 
-Power BI is used to create interactive business dashboards for:
+ðŸ–¼ï¸ Project Screenshots
 
-* Revenue
-* Customer analysis
-* Product performance
-* Seller performance
-* Data quality
+### Revenue Intelligence
 
-The dashboards provide business users with visual exploration in addition to the AI Copilot.
+[View Revenue Intelligence Screenshot](screenshots/revenue_intelligence.pdf)
 
----
+### Customer Intelligence
 
-# 📁 Project Structure
+[View Customer Intelligence Screenshot](screenshots/customer_intelligence.pdf)
 
-```text
+### Seller Intelligence
+
+[View Seller Intelligence Screenshot](screenshots/seller_intelligence.pdf)
+
+### Product Intelligence
+
+[View Product Intelligence Screenshot](screenshots/product_intelligence.pdf)
+
+### Data Quality Dashboard
+
+[View Data Quality Dashboard Screenshot](screenshots/data_quality_dashboard.pdf)
+Project Structure
+
 AI-Business-Intelligence-Copilot/
-│
-├── .env
-├── .gitignore
-│
-├── ai/
-│   └── copilot_llm.py
-│
-├── dashboard/
-│   └── app.py
-│
-├── data/
-│   ├── olist_customers_dataset.csv
-│   ├── olist_geolocation_dataset.csv
-│   ├── olist_order_items_dataset.csv
-│   ├── olist_order_payments_dataset.csv
-│   ├── olist_order_reviews_dataset.csv
-│   ├── olist_orders_dataset.csv
-│   ├── olist_products_dataset.csv
-│   ├── olist_sellers_dataset.csv
-│   ├── product_category_name_translation.csv
-│   └── master_quality_report_final.csv
-│
-├── models/
-│   └── daily_revenue_forecast_model.pkl
-│
-├── notebooks/
-│   └── 01_data_inspection.ipynb
-│
-├── screenshots/
-│
-├── sql/
-│
-└── src/
-    ├── business_engine.py
-    ├── copilot_data.py
-    ├── data_quality_engine.py
-    └── intent_router.py
-```
+â”‚
+â”œâ”€â”€ .env
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ README.md
+â”‚
+â”œâ”€â”€ ai/
+â”‚   â””â”€â”€ copilot_llm.py
+â”‚
+â”œâ”€â”€ dashboard/
+â”‚   â””â”€â”€ app.py
+â”‚
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ olist_customers_dataset.csv
+â”‚   â”œâ”€â”€ olist_geolocation_dataset.csv
+â”‚   â”œâ”€â”€ olist_order_items_dataset.csv
+â”‚   â”œâ”€â”€ olist_order_payments_dataset.csv
+â”‚   â”œâ”€â”€ olist_order_reviews_dataset.csv
+â”‚   â”œâ”€â”€ olist_orders_dataset.csv
+â”‚   â”œâ”€â”€ olist_products_dataset.csv
+â”‚   â”œâ”€â”€ olist_sellers_dataset.csv
+â”‚   â”œâ”€â”€ product_category_name_translation.csv
+â”‚   â””â”€â”€ master_quality_report_final.csv
+â”‚
+â”œâ”€â”€ models/
+â”‚   â””â”€â”€ daily_revenue_forecast_model.pkl
+â”‚
+â”œâ”€â”€ notebooks/
+â”‚   â””â”€â”€ 01_data_inspection.ipynb
+â”‚
+â”œâ”€â”€ screenshots/
+â”‚   â”œâ”€â”€ data_quality_dashboard.png
+â”‚   â”œâ”€â”€ revenue_intelligence.png
+â”‚   â”œâ”€â”€ customer_intelligence.png
+â”‚   â”œâ”€â”€ seller_intelligence.png
+â”‚   â””â”€â”€ product_intelligence.png
+â”‚
+â””â”€â”€ src/
+    â”œâ”€â”€ business_engine.py
+    â”œâ”€â”€ copilot_data.py
+    â”œâ”€â”€ data_quality_engine.py
+    â””â”€â”€ intent_router.py
 
----
+Security: .env is kept local and should never be committed to
+GitHub.
 
-# ⚙️ Installation
+âš™ï¸ Installation
 
-Clone the repository:
+1. Clone the repository
 
-```bash
-git clone <your-github-repository-url>
+git clone https://github.com/Akash-kaurav/AI-Business-Intelligence-Copilot.git
 cd AI-Business-Intelligence-Copilot
-```
 
-Create a virtual environment:
+2. Create a virtual environment
 
-```bash
 python -m venv venv
-```
 
-Activate it on Windows:
+Windows
 
-```bash
 venv\Scripts\activate
-```
 
-Install dependencies:
+3. Install dependencies
 
-```bash
 pip install pandas numpy scikit-learn streamlit python-dotenv openai
-```
 
----
+If your local environment uses additional packages from the project,
+install those packages as well.
 
-# 🔐 Environment Variables
+ðŸ” Environment Variables
 
-Create a `.env` file:
+Create a local .env file:
 
-```env
 OPENAI_API_KEY=your_api_key_here
-```
 
-Do **not** commit `.env` to GitHub.
+Never commit your API key to GitHub.
 
-The project includes `.env` in `.gitignore`.
+The project uses .gitignore to keep .env out of version control.
 
----
-
-# ▶️ Run the Application
+â–¶ï¸ Run the Application
 
 From the project root:
 
-```bash
 streamlit run dashboard/app.py
-```
 
 The application will open in the browser.
 
----
+ðŸ’¬ Example Business Questions
 
-# 💬 Example Business Questions
+Revenue
 
-### Revenue
-
-```text
 Why did revenue decline in June 2018?
+
 What happened to revenue in May 2018?
-```
 
-### Forecasting
+Forecasting
 
-```text
 What will tomorrow's revenue be?
+
 How accurate is the revenue forecast model?
-```
 
-### Customer
+Customer
 
-```text
 How many VIP customers do we have?
+
 Which customers are at risk?
+
 What is our customer retention risk?
+
 Which customers should we prioritize for retention?
-```
 
-### Products
+Products
 
-```text
 What are the top 10 products by revenue?
+
 Which products are business winners?
+
 Which products have high demand but low value?
-```
 
-### Sellers
+Sellers
 
-```text
 Which sellers are top performers?
+
 Show me the top 10 risky sellers.
+
 Which sellers have the highest late delivery rate?
-```
 
-### Data Quality
+Data Quality
 
-```text
 Are there any data quality issues?
+
 Which datasets have the most quality issues?
+
 Show me the quality report.
-```
 
----
+ðŸ“Œ Key Project Insights
 
-# 📌 Key Project Insights
+The analysis demonstrates several useful business patterns:
 
-The analysis identified several useful business patterns, including:
+Customer RFM analysis can identify VIP, loyal, potential-loyal,
+at-risk, and lost customer groups.
 
-* A small proportion of customers generate a large share of customer revenue.
-* Customer RFM analysis can identify VIP, loyal, at-risk, and lost customer groups.
-* Some sellers generate significant revenue while also showing elevated late-delivery rates.
-* Product analysis separates high-revenue products from high-demand, low-value products.
-* Data-quality monitoring identifies datasets requiring further review.
-* Daily revenue forecasting can provide a machine-learning based estimate for the next day.
+A relatively small group of high-value customers contributes a
+substantial share of customer revenue.
 
----
+Some sellers generate significant revenue while also showing
+elevated late-delivery rates.
 
-# 🚀 Future Improvements
+Product analysis separates high-revenue products from high-demand,
+lower-value products.
+
+Data-quality monitoring identifies datasets and checks that require
+investigation.
+
+Daily revenue forecasting can provide a machine-learning based
+estimate for the next day.
+
+ðŸš€ Future Improvements
 
 Possible future improvements include:
 
-* Automated dashboard refresh
-* Advanced customer churn prediction
-* Product recommendation system
-* Seller anomaly detection
-* Automated business alerts
-* More advanced forecasting models
-* Conversational Power BI integration
-* Deployment to a cloud platform
-* Automated data pipelines
+Automated dashboard refresh
 
----
+Advanced customer churn prediction
 
-# 👨‍💻 Project Objective
+Product recommendation system
 
-This project demonstrates practical skills in:
+Seller anomaly detection
 
-**Data Analysis → SQL → Business Intelligence → Machine Learning → Data Quality → Generative AI**
+Automated business alerts
 
-It is designed as an end-to-end portfolio project demonstrating how raw business data can be transformed into analytical insights and natural-language business intelligence.
+More advanced forecasting models
+
+Conversational Power BI integration
+
+Cloud deployment
+
+Automated data pipelines
+
+ðŸ‘¨â€ðŸ’» Project Objective
+
+This project demonstrates practical skills across:
+
+Data Analysis
+      â†“
+SQL
+      â†“
+Business Intelligence
+      â†“
+Machine Learning
+      â†“
+Data Quality
+      â†“
+Generative AI
+
+The objective is to demonstrate how raw business data can be transformed
+into analytical insights, forecasts, data-quality findings, and
+natural-language business intelligence through a single end-to-end
+portfolio project.
+
+ðŸ“š Dataset
+
+Olist Brazilian E-Commerce Public Dataset
+
+The dataset contains anonymized Brazilian e-commerce data covering
+customers, orders, products, sellers, payments, reviews, and related
+information.
+
+Dataset source:
+
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
