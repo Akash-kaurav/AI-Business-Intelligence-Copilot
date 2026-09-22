@@ -649,10 +649,34 @@ def display_copilot_response(
         st.markdown(ai_response)
 
         with st.expander(
-            "🔎 View Original Analytics Result"
-        ):
+    "🔎 View Original Analytics Result"
+):
 
-            st.text(analytics_result)
+           st.markdown(
+        f"""
+        <div style="
+            background: rgba(2, 6, 23, 0.96);
+            border: 1px solid rgba(56, 189, 248, 0.22);
+            border-radius: 12px;
+            padding: 18px;
+            margin-top: 8px;
+        ">
+            <pre style="
+                color: #f8fafc !important;
+                background: transparent !important;
+                font-family: Consolas, 'Courier New', monospace !important;
+                font-size: 14px !important;
+                line-height: 1.65 !important;
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
+                margin: 0 !important;
+            ">{analytics_result}</pre>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+         
 
 
 # =========================================================
